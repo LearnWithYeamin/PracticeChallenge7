@@ -150,12 +150,26 @@
             android:text="Player Type"
             android:textSize="14sp" />
 
-        <TextView
-            android:id="@+id/playerDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Player Description"
-            android:textSize="12sp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/playerDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player Description"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 
 </LinearLayout>
